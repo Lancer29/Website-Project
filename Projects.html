@@ -5,68 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lane Baker - IT Professional</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body class="bodyexp">
     <header>
-        <h1 style="color:aliceblue">Lane Baker</h1>
+                <h1 class="title">Lane Baker</h1>
         <nav>
-            <a href="Home.html"><button class="Button HomeButton">Home</button></a>
-            <a href="Experience.html"><button class="Button ExperienceButton">Experience</button></a>
-            <a href="Projects.html"><button class="Button ProjectsButton">Projects</button></a>
-            <a href="Certifications.html"><button class="Button CertificationsButton">Certifications</button></a>
-            <a href="About.html"><button class="Button AboutButton">About/Future</button></a>
+            <a href="index.html"><button class="Button HomeButton">Home</button></a>
+            <a href="experience.html"><button class="Button ExperienceButton">Experience</button></a>
+            <a href="projects.html"><button class="Button ProjectsButton">Projects</button></a>
+            <a href="certs.html"><button class="Button CertificationsButton">Certifications</button></a>
+            <a href="about.html"><button class="Button AboutButton">About/Future</button></a>
         </nav>
     </header>
 
-    <main>
+<main>
 
-        <section>
-            <p style="color:aliceblue">
-                This page shows projects i am curently working or finsihed.
-            </p>
-        </section>
+    <section>
+        <p style="color:aliceblue">
+            This page shows projects i am currently working on or finished. Click any project to expand it.
+        </p>
+    </section>
 
-        <section class="sectionExp2">
-            <h2 class="header2">Authenticated To-Do List</h2>
+    <section class="sectionExp2">
+        <div class="section-toggle" onclick="toggleSection(this)">
+            <h2 class="header2" style="margin:0">
+                <span>Project Title</span>
+                <span class="toggle-icon">▼</span>
+            </h2>
+        </div>
+        <div class="section-body">
+            <hr>
+            <h3 class="h3">Project Type &nbsp;|&nbsp; Problem: </h3>
+            <p class="text1">How i solved said Problem</p>
+            <hr>
+            <h3 class="h3"> What Was built</h3>
+            <p class="text1">The lab or program that was built.</p>
+            <hr>
+            <h3 class="h3">Why was it built :</h3>
+            <p class="text1">The explanation</p>
+            <hr>
+            <h3 class="h3">Result &nbsp;|&nbsp; Results: </h3>
+            <p class="text1">What was achieved and how</p>
+        </div>
+    </section>
+
+    <section class="sectionExp2">
+        <div class="section-toggle" onclick="toggleSection(this)">
+            <h2 class="header2" style="margin:0">
+                <span>Authenticated To-Do List</span>
+                <span class="toggle-icon">▼</span>
+            </h2>
+        </div>
+        <div class="section-body">
             <h3 class="h3">Python &nbsp;|&nbsp; Personal Project</h3>
-            <p class="text1"><p class="text1">Built a to-do list application with a basic authentication system written entirely from memory. Implemented if/else login logic with SHA256 password hashing via Python's hashlib library. Features include input validation, enumerated task display, and a menu-driven interface. Available on GitHub.</p></p>
-        </section>
+            <p class="text1">Built a to-do list application with a basic authentication system written entirely from memory. Implemented if/else login logic with SHA256 password hashing via Python's hashlib library. Features include input validation, enumerated task display, and a menu-driven interface. Available on GitHub.</p>
+        </div>
+    </section>
 
-        <section style="height: 10px;">&nbsp;</section>
-
-        <section class="sectionExp2">
-            <h2 class="header2">Self-Hosted Portfolio Website</h2>
+    <section class="sectionExp2">
+        <div class="section-toggle" onclick="toggleSection(this)">
+            <h2 class="header2" style="margin:0">
+                <span>Self-Hosted Portfolio Website</span>
+                <span class="toggle-icon">▼</span>
+            </h2>
+        </div>
+        <div class="section-body">
             <h3 class="h3">HTML / CSS / JavaScript / MySQL &nbsp;|&nbsp; Linux VPS</h3>
             <p class="text1">Designed, built, and deployed this portfolio site from scratch on a self-hosted Linux server. Configured the web server, managed firewall rules using UFW, and set up a MySQL backend for dynamic content. The site is fully self-managed — no page builders, no hosting platforms. Every line of code written by hand.</p>
-        </section>
+        </div>
+    </section>
 
-        <section style="height: 10px;">&nbsp;</section>
-
-        <section class="sectionExp2">
-            <h2 class="header2">Reporting Automation — R&L Carriers</h2>
+    <section class="sectionExp2">
+        <div class="section-toggle" onclick="toggleSection(this)">
+            <h2 class="header2" style="margin:0">
+                <span>Reporting Automation — R&L Carriers</span>
+                <span class="toggle-icon">▼</span>
+            </h2>
+        </div>
+        <div class="section-body">
             <h3 class="h3">Excel / VBA Macros &nbsp;|&nbsp; Professional Project</h3>
             <p class="text1">Identified a manual reporting bottleneck that consumed nearly a full work week every cycle. Designed and implemented Excel macros to automate the data processing pipeline, reducing report generation time from 5 days to 1.5 days — a 70% efficiency gain. This project demonstrated real-world impact: less time on reporting meant more time on active security monitoring across 150+ facilities.</p>
-        </section>
+        </div>
+    </section>
 
-        <section style="height: 10px;">&nbsp;</section>
-
-        <section class="sectionExp2">
-            <h2 class="header2">Cisco Network Lab</h2>
+    <section class="sectionExp2">
+        <div class="section-toggle" onclick="toggleSection(this)">
+            <h2 class="header2" style="margin:0">
+                <span>Cisco Network Lab</span>
+                <span class="toggle-icon">▼</span>
+            </h2>
+        </div>
+        <div class="section-body">
             <h3 class="h3">Cisco IOS &nbsp;|&nbsp; Networking Lab</h3>
             <p class="text1">Built and configured a hands-on network lab environment covering core enterprise networking concepts. Configured DNS, DHCP, OSPF dynamic routing, NAT, and PAT on Cisco IOS devices. Practiced inter-VLAN routing, static and dynamic routing protocols, and network address translation scenarios. This lab work directly supports my CompTIA Network+ certification and real-world networking knowledge.</p>
-        </section>
+        </div>
+    </section>
 
-        <section style="height: 10px;">&nbsp;</section>
-
-        <section class="sectionExp2">
-            <h2 class="header2">Linux VPS Provisioning & Hardening</h2>
+    <section class="sectionExp2">
+        <div class="section-toggle" onclick="toggleSection(this)">
+            <h2 class="header2" style="margin:0">
+                <span>Linux VPS Provisioning & Hardening</span>
+                <span class="toggle-icon">▼</span>
+            </h2>
+        </div>
+        <div class="section-body">
             <h3 class="h3">Linux / UFW / Linode &nbsp;|&nbsp; Infrastructure Project</h3>
             <p class="text1">Provisioned and configured a cloud-based Linux VPS from scratch on Linode. Tasks included initial server setup, user management, SSH configuration, firewall rule management with UFW, web server deployment, and ongoing maintenance. This project reflects the same core skillset required in data center operations — standing up infrastructure, securing it, and keeping it running.</p>
-        </section>
+        </div>
+    </section>
 
-        <section style="height: 10px;">&nbsp;</section>
-
-    </main>
+</main>
         
 
 <footer>
